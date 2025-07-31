@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace Dan.Plugin.DATASOURCENAME.Test
+namespace Dan.Plugin.Lottstift.Test
 {
     public class UnitTest1
     {

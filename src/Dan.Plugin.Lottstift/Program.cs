@@ -1,7 +1,9 @@
 using Microsoft.Extensions.Hosting;
 using Dan.Common.Extensions;
-using Dan.Plugin.DATASOURCENAME.Config;
 using Microsoft.Extensions.DependencyInjection;
+using Dan.Plugin.Lottstift.Config;
+using Altinn.Dan.Plugin.Lottstift.Services.Interfaces;
+using Altinn.Dan.Plugin.Lottstift.Services;
 
 var host = new HostBuilder()
     .ConfigureDanPluginDefaults()
@@ -17,6 +19,8 @@ var host = new HostBuilder()
         // This makes IOption<Settings> available in the DI container.
         var configurationRoot = context.Configuration;
         services.Configure<Settings>(configurationRoot);
+
+        services.AddSingleton<IMemoryCacheProvider, MemoryCacheProvider>();
     })
     .Build();
 

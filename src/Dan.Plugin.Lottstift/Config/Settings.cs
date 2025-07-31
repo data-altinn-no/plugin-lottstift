@@ -1,4 +1,6 @@
-namespace Dan.Plugin.DATASOURCENAME.Config;
+using System;
+
+namespace Dan.Plugin.Lottstift.Config;
 
 public class Settings
 {
@@ -7,4 +9,8 @@ public class Settings
     public int SafeHttpClientTimeout { get; init; }
 
     public string EndpointUrl { get; init; }
+
+    public string LastUpdatedUrl { get; init; }
+
+    public int CacheTimeToLiveDays { get; init; }
 }
