@@ -8,13 +8,12 @@ public static class PluginConstants
     public const int ErrorInvalidInput = 1002;
     public const int ErrorNotFound = 1003;
     public const int ErrorUnableToParseResponse = 1004;
-    public static int ErrorNoEndpoints = 1005;
+    public const int ErrorNoEndpoints = 1005;
 
     // The datasets must supply a human-readable source description from which they originate. Individual fields might come from different sources, and this string should reflect that (ie. name all possible sources).
     public const string SourceName = "Lotteri- og stiftelsestilsynet";  
     public const string VolunteerOrganisations = "VolunteerOrganisations";
 
-    public static string LottstiftEndpointsCacheKey = "frivilligeorganisasjoner";
+    public const string LottstiftEndpointsCacheKey = "frivilligeorganisasjoner";
 
-    
-}
+    public const string VolunteerServiceContext = "Digøk-friv";

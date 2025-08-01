@@ -29,6 +29,10 @@ public class Metadata : IEvidenceSourceMetadata
                 EvidenceCodeName = PluginConstants.VolunteerOrganisations,
                 EvidenceSource = PluginConstants.SourceName,
                 IsPublic = true,
+                BelongsToServiceContexts = new List<string>
+                {
+                    PluginConstants.VolunteerServiceContext
+                },
                 Values =
                 [
                     new EvidenceValue
