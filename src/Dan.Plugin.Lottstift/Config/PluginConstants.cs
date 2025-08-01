@@ -11,9 +11,10 @@ public static class PluginConstants
     public const int ErrorNoEndpoints = 1005;
 
     // The datasets must supply a human-readable source description from which they originate. Individual fields might come from different sources, and this string should reflect that (ie. name all possible sources).
-    public const string SourceName = "Lotteri- og stiftelsestilsynet";  
+    public const string SourceName = "Lotteri- og stiftelsestilsynet";
     public const string VolunteerOrganisations = "VolunteerOrganisations";
 
     public const string LottstiftEndpointsCacheKey = "frivilligeorganisasjoner";
 
     public const string VolunteerServiceContext = "Digøk-friv";
+}
