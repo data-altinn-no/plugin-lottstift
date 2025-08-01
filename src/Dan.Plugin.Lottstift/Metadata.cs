@@ -38,28 +38,33 @@ public class Metadata : IEvidenceSourceMetadata
                     new EvidenceValue
                     {
                         EvidenceValueName = "organizationNumber",
-                        ValueType = EvidenceValueType.String
+                        ValueType = EvidenceValueType.String,
+                        Source = PluginConstants.SourceName
                     },
 
                     new EvidenceValue
                     {
                         EvidenceValueName = "volunteerEvaluationYear",
-                        ValueType = EvidenceValueType.Number
+                        ValueType = EvidenceValueType.Number,
+                        Source = PluginConstants.SourceName
                     },
                     new EvidenceValue
                     {
                         EvidenceValueName = "isVolunteer",
-                        ValueType = EvidenceValueType.Boolean
+                        ValueType = EvidenceValueType.Boolean,
+                        Source = PluginConstants.SourceName
                     },
                     new EvidenceValue
                     {
                         EvidenceValueName = "vatCompensatedYear",
-                        ValueType = EvidenceValueType.Number
+                        ValueType = EvidenceValueType.Number,
+                        Source = PluginConstants.SourceName
                     },
                     new EvidenceValue
                     {
                         EvidenceValueName = "isVatCompensated",
-                        ValueType = EvidenceValueType.Boolean
+                        ValueType = EvidenceValueType.Boolean,
+                        Source = PluginConstants.SourceName
                     }
                 ]
             }
